@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS forms</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="bootstrap/css/font-awesome-5.8.1.css">
+    <link rel="stylesheet" href="bootstrap/css/animate.css">
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            background: white url("img/image5.jpeg") no-repeat scroll center;
+        }
+        .form-div{
+            width: 250px;
+            text-align: center;
+            margin: 200px auto;
+            background-color: rgba(0,0,0,0.5);
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px #baa285;
+        }
+        .form-div h2{
+            color: #917c65;
+            margin-top: 10px;
+            font-size: 28px;
+        }
+        .fa-user-circle{
+            font-size: 100px;
+            border: 5px solid #917c65;
+            border-radius: 50%;
+            margin-top: -70px;
+        }
+        .input-field{
+            text-align: center;
+            outline: none;
+            border: none;
+            font-size: 18px;
+            margin: 5px;
+            height: 35px;
+            background: transparent;
+            color: #baa285;
+            border-bottom: 3px solid #917c65;
+            width: 200px;
+        }
+        .input-field:focus{
+            border-bottom: 3px solid #baa285;
+        }
+        #submit-btn{
+            background-color: #917c65;
+            border: none;
+            padding: 12px 25px;
+            font-size: 18px;
+            width: 150px;
+            border-radius: 50px;
+            outline: none;
+            margin: 15px 0 10px 0;
+        }
+        #submit-btn:hover{
+            box-shadow:0 0 10px #917c65;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Login Form -->
+    <div class="form-div animated flipInX">
+        <i class="fa fa-user-circle"></i>
+        <h2>Login Here</h2>
+        <form>
+            <input type="text" placeholder="User Name" class="input-field">
+            <br>
+            <input type="password" placeholder="Password" class="input-field">
+            <br>
+            <input type="submit" value="Login" id="submit-btn">
+        </form>
+    </div>
+
+</body>
+</html>
